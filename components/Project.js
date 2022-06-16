@@ -62,12 +62,12 @@ export default function Project(){
                         projects.map((curElm,index )=> {
                             return(
 
-                                    <div class="card" key={index}>
-                                    <div class="content">
-                                        <div class="front">
+                                    <div className="card" key={index}>
+                                    <div className="content">
+                                        <div className="front">
                                             <img src={`${curElm.img}`} ></img>
                                         </div>
-                                        <div class="back">
+                                        <div className="back">
                                             <div>
                                                 <span>Languages Used : </span> <br />
                                                 <h3>{curElm.language}</h3>
