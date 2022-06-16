@@ -1,0 +1,145 @@
+.project_container{
+    padding: 15rem 18rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    background: rgba(240, 239, 239, 0.878);
+/* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+z-index: 3;
+}
+
+.project_header{
+  /* width: 40rem; */
+  /* height: 70rem; */
+  position: absolute;
+  top:50%;
+  /* left:0; */
+  transform: translateY(-50%) ;
+  /* background:blue; */
+  margin:auto;
+}
+.project_header h1{
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/990140/download.png)   -20px -20px no-repeat;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* Below is not needed */
+  display:block;
+  font-size: 20rem;
+  font-family: arial;
+  text-align: center;
+  margin: -20px 0 3rem;
+  font-weight: bold;
+  letter-spacing: 20px;
+  background-size: cover;
+  width: 100%;
+  opacity: 0.5;
+}
+
+.project_card_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.card {
+    position: relative;
+    /* top: 50%; */
+    /* left: 50%; */
+    width: 30rem;
+    height: 30rem;
+    margin: 1rem;
+    /* float: left; */
+  transform: rotateX(30deg) ;
+
+    /* perspective: 200px; */
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
+  .front img{
+    width: 15rem;
+    /* height: 5rem; */
+  }
+
+
+  .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
+  .card:hover .content {
+    transform: rotateY( 180deg ) ;
+    transition: transform 0.5s;
+  }
+  
+  .front,
+  .back {
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.742);
+    border-radius: 5px;
+    backface-visibility: hidden;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
+
+  .front{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .back {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+
+    color: #03446A;
+    text-align: center;
+    background: #03446ab2;
+    color: white;
+    transform: rotateY( 180deg );
+  }
+
+  .back span{
+    color:orange;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .back h3{
+    font-size: 1.4rem;
+    width: 15rem;
+    font-weight: normal;
+    /* margin: 0 0 1rem; */
+  }
+  .back h4{
+    width: 17rem;
+    font-size: 1.4rem;
+    font-weight: normal;
+  }
+
+  .back a{
+    font-size: 2rem;
+  }
+  .back a:hover{
+    color:red;
+  }
+
+@media screen and (max-width: 768px){
+
+.project_header h1{
+  font-size: 2rem;
+}
+
+}

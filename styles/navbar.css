@@ -1,0 +1,57 @@
+.navbar_container{
+    width:28rem;
+    height: 7rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+.navbar{
+    padding: 2rem;
+
+    background:black;
+    border-radius: 20px;
+    margin: 1.2rem;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color:red;
+    overflow: hidden;   
+}
+
+.navbar_container img{
+    width: 3rem;
+    margin: 1rem auto;
+filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+
+}
+
+.blob{
+    margin: 2rem;
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background:white;
+    border-radius: 20px;
+
+}
+
+@media screen and (max-width: 768px){
+
+    .navbar_container{
+        width: 40rem;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .navbar{
+        background:rgba(0, 0, 0, 0.6);
+    }
+    .blob{
+        margin: 2rem 3.5rem;
+        right: 5.5rem !important;
+    }
+
+}
