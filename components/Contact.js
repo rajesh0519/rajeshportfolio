@@ -1,4 +1,4 @@
-import { AnimationOnScroll } from 'react-animation-on-scroll';
+import AnimationOnScroll from 'react-animate-on-scroll';
 
 export default function Contact(){
     return(

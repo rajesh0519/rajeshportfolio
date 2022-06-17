@@ -1,4 +1,4 @@
-import { AnimationOnScroll } from 'react-animation-on-scroll';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 export default function Project(){
@@ -54,7 +54,7 @@ export default function Project(){
                     <h1>S</h1> */}
 
                 </div>
-                <AnimationOnScroll animateIn="animate__jello">
+                <ScrollAnimation animateIn="animate__jello">
 
                 <div className="project_card_container">
 
@@ -95,7 +95,7 @@ export default function Project(){
                 
                     
                 </div>
-                </AnimationOnScroll>
+                </ScrollAnimation>
 
             </div>
         </>

@@ -1,4 +1,4 @@
-import { AnimationOnScroll } from 'react-animation-on-scroll';
+import ScrollAnimation  from 'react-animate-on-scroll';
 
 
 export default function HomePage(){
@@ -14,11 +14,11 @@ export default function HomePage(){
                         {/* <img src='/gmail.ico'></img> */}
 
                     </div>
-                <AnimationOnScroll initiallyVisible={true} animateIn="animate__tada">
+                <ScrollAnimation initiallyVisible={true} animateIn="animate__tada">
 
                     <h1>I am Rajesh Rawat</h1>
 
-                    </AnimationOnScroll>
+                    </ScrollAnimation>
                     <h3>
                         I have to write something about me,
                         I have to write something about me,

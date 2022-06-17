@@ -1,6 +1,6 @@
 import { CircularProgressbar , CircularProgressbarWithChildren } from 'react-circular-progressbar';
 import Tilt from 'react-vanilla-tilt'
-import { AnimationOnScroll } from 'react-animation-on-scroll';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 export default function About(){
@@ -13,7 +13,7 @@ export default function About(){
                 <div>
                     <h2>About Me</h2>
                 </div>
-                <AnimationOnScroll initiallyVisible={true} animateIn="animate__rubberBand">
+                <ScrollAnimation initiallyVisible={true} animateIn="animate__rubberBand">
                 <Tilt style={{width:"100%" , height:"100%"}}>
                 <div className="about_view">
                     <div className="details">
@@ -146,7 +146,7 @@ export default function About(){
                     </div>
                 </div>
                 </Tilt>
-                </AnimationOnScroll>
+                </ScrollAnimation>
        
             </div>
         </>
