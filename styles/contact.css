@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 15rem 22rem 5rem;
+    padding: 15rem 22rem;
     overflow: hidden;
 
     background: rgba(240, 239, 239, 0.878);
@@ -171,7 +171,7 @@ form textarea{
 
 @media screen and (max-width: 768px){
    .contact_container{
-    padding:2rem;
+    padding:15rem 2rem;
 
    }
 
@@ -184,6 +184,10 @@ form textarea{
    .contact_details div:hover{
     width: 80rem;
    }
+   /* .contact_details div:hover span{
+    display: block;
+   } */
+
    .contact_details span{
     display: flex;
     flex-wrap: wrap;
@@ -192,5 +196,7 @@ form textarea{
     height: 100%;
     /* word-break: break-all; */
     overflow: hidden;
+    /* display: none; */
+
    }
 }
