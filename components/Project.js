@@ -73,7 +73,7 @@ export default function Project(){
                                         </div>
 
                                         <div>
-                                            <a href={`https://${curElm.name}`} target="_blank" refs="noopener noreferre">{curElm.name}</a>
+                                            <a href={`https://${curElm.name}`} target="_blank" refs="noreferrer">{curElm.name}</a>
                                         </div>
 
                                         <div>
