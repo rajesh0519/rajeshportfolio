@@ -9,10 +9,10 @@ export default function Navbar(){
   const handleScroll = () => {
     const position = window.pageYOffset;
     const height = window.innerHeight
-    console.log(height,"height");
-    console.log(position,"position");
+    // console.log(height,"height");
+    // console.log(position,"position");
     const finalData = Math.floor((position / 4000) * 100)
-    console.log(finalData,"final data");
+    // console.log(finalData,"final data");
 
     setScrollPosition(position);
   };
