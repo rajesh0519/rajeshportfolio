@@ -65,9 +65,9 @@ export default function Project(){
         {
                         projects.map((curElm,index )=> {
                             return(
-                                <SwiperSlide>
+                                <SwiperSlide key={index}>
 
-                                    <div className="card" key={index}>
+                                    <div className="card" >
                                         <div className="card_img">
                                             <img src={`${curElm.img}`} alt="card_img"></img>
                                         </div>

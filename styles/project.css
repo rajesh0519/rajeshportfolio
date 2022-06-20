@@ -120,11 +120,14 @@ z-index: 3;
 @media screen and (max-width: 768px){
 
 .project_header h1{
-  font-size: 2rem;
+  font-size: 5rem;
 }
 .project_container{
   padding: 10rem 2rem;
   width: 100%;
+}
+.card{
+  width: 40rem;
 }
 
 }
