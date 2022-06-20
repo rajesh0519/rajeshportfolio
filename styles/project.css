@@ -1,18 +1,16 @@
 .project_container{
-    padding: 10rem 18rem;
+    padding: 15rem;
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    overflow: hidden;
     background: rgba(240, 239, 239, 0.878);
-/* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
 z-index: 3;
 }
 
 .project_header{
-  /* width: 40rem; */
+  width: 100%;
   /* height: 70rem; */
   /* position: absolute; */
   /* top:50%; */
@@ -26,16 +24,14 @@ z-index: 3;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   /* Below is not needed */
-  display:block;
   font-size: 20rem;
   font-family: arial;
   text-align: center;
-  margin: -20px 0 3rem;
   font-weight: bold;
   letter-spacing: 20px;
   background-size: cover;
   width: 100%;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .project_card_container{
@@ -123,7 +119,7 @@ z-index: 3;
   font-size: 5rem;
 }
 .project_container{
-  padding: 10rem 2rem;
+  padding: 15rem 2rem;
   width: 100%;
 }
 .card{

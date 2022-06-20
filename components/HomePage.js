@@ -6,10 +6,9 @@ export default function HomePage(){
         <>
             <div className="main_container">
                     <div className="social">
-                        <img src='/gmail.ico'></img>
-                        <img src='/github.ico'></img>
-                        <img src='/facebook.png'></img>
-                        <img src='/instagram.png'></img>
+                        <a href={`mailto:rawatrajesh0519@gmail.com`} target="blank" rel="noreferrer"><img src='/gmail.ico'></img></a>
+                        <a href="https://github.com/rajesh0519" target="blank" rel="noreferrer"><img src='/github.ico'></img></a>
+                        <a href="https://www.instagram.com/rajesh0519/" target="blank" rel="noreferrer"><img src='/instagram.png'></img></a>
                     </div>
     
                     <div>

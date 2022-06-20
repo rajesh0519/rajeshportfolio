@@ -9,7 +9,7 @@ export default function Contact(){
                 <div className="contact_header">
                     {/* <h1>CONTACT</h1> */}
                 </div>
-                <AnimationOnScroll animateIn="animate__fadeInLeftBig">
+                <AnimationOnScroll initiallyVisible={true} animateIn="animate__fadeInLeftBig">
 
                 <div className="contact_details">
                     <div>
@@ -28,21 +28,25 @@ export default function Contact(){
                     </div>
                     
                     <div>
+                        <h3>Socials - </h3>
+                        <span>
+
+                        <a href={`mailto:rawatrajesh0519@gmail.com`} target="blank" rel="noreferrer"><img src='/gmail.ico'></img></a>
+                        <a href="https://github.com/rajesh0519" target="blank" rel="noreferrer"><img src='/github.ico'></img></a>
+                        <a href="https://www.instagram.com/rajesh0519/" target="blank" rel="noreferrer"><img src='/instagram.png'></img></a>
+
+                        </span>
+
+                    </div>
+
+                    <div>
                         <h3>Address - </h3>
                         <span>
                             Virar , Maharashtra-401303
                         </span>
 
                     </div>
-                    <div>
-                        <h3>Socials - </h3>
-                        <span>
-                            <img src='/instagram.png'></img>
-                            <img src='/github.ico'></img>
-                            <img src='/facebook.png'></img>
-                        </span>
-
-                    </div>
+                    
 
 
                 </div>
@@ -78,6 +82,8 @@ export default function Contact(){
                     </form>
                 </div>
                 </AnimationOnScroll>
+
+                
 
             </div>
         </>

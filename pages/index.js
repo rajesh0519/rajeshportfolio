@@ -71,6 +71,10 @@ export default function Home() {
     <Project />
     <Contact />
 
+    <div className="footer">
+        <h2>Made by Rajesh Rawat</h2>
+    </div>
+
    </>
   )
 }

@@ -41,7 +41,7 @@ export default function Navbar(){
                     onClick={() =>{jump('.project_container',{duration: 2000, }) }}
                     className="ico3" ></img>
                     <img src="/contact.png" 
-                    onClick={() =>{jump('.contact_container',{duration: 2000,   }) }}
+                    onClick={() =>{jump('.contact_details',{duration: 2000,   }) }}
                     className="ico4" ></img>
                 </div>
                 

@@ -51,7 +51,6 @@ export default function Project(){
                 <div className="project_header">
                     <h1>PROJECTS</h1>
                 </div>
-                {/* <ScrollAnimation animateIn="animate__jello"> */}
 
 
                 
@@ -66,6 +65,7 @@ export default function Project(){
                         projects.map((curElm,index )=> {
                             return(
                                 <SwiperSlide key={index}>
+                <ScrollAnimation initiallyVisible={true} animateIn="animate__jello">
 
                                     <div className="card" >
                                         <div className="card_img">
@@ -94,6 +94,8 @@ export default function Project(){
                                         </div>
 
                                     </div>
+                </ScrollAnimation>
+
                              </SwiperSlide>
 
                             )
@@ -103,7 +105,6 @@ export default function Project(){
 
                 </Swiper>
                 </div>
-                {/* </ScrollAnimation> */}
 
             </div>
         </>

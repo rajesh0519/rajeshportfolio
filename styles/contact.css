@@ -131,16 +131,16 @@ form textarea{
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  flex-wrap: wrap;
 }
 .contact_details div{
-  width: 25rem;
+  width: auto;
   height: 100%;
   display: flex;
   /* justify-content: center; */
   flex-direction: column;
   padding: 2rem;
-
+  margin: 1rem 0;
   background: rgba( 255, 255, 255, 0.25 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   border-radius: 10px;
@@ -156,7 +156,7 @@ form textarea{
 .contact_details span{
   font-size: 1.4rem;
   text-align: center;
-  background:white;
+  background:rgba(255, 255, 255, 0.667);
   border-radius: 20px;
   padding: 1rem 1.5rem;
   width: 100%;
@@ -169,17 +169,15 @@ form textarea{
   border-radius: 20px;
 }
 
+
 @media screen and (max-width: 768px){
    .contact_container{
     padding:15rem 2rem;
-
    }
 
    .contact_details div{
-      width: 40%;
-      position: relative;
       overflow: hidden;
-      height: 20rem;
+      height: 15rem;
    }
    .contact_details div:hover{
     width: 80rem;
@@ -197,6 +195,5 @@ form textarea{
     /* word-break: break-all; */
     overflow: hidden;
     /* display: none; */
-
    }
 }
