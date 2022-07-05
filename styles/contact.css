@@ -198,8 +198,13 @@ form textarea{
     justify-content: center;
     align-items: center;
     height: 100%;
-    /* word-break: break-all; */
     overflow: hidden;
-    /* display: none; */
+    font-size: 1.8rem;
+    padding: .5rem;
+  }
+
+   .contact_details img{
+    width: 3rem;
+    height: 3rem;
    }
 }

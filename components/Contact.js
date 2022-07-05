@@ -1,6 +1,28 @@
 import AnimationOnScroll from 'react-animate-on-scroll';
+import emailjs from '@emailjs/browser';
+import { useRef , useState } from 'react';
 
 export default function Contact(){
+
+    const [formstatus , setFormStatus ] = useState(false);
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_cabxugs', 'template_yikbhca', form.current, 'HHb_r9D_gHjtrQdNI')
+          .then((result) => {
+              console.log(result.text);
+              alert("Form Submitted Successfully");
+              setFormStatus(true);
+          }, (error) => {
+              console.log(error.text);
+              alert("Error Occured Plz try again!");
+
+          });
+      };
+
     return(
         <>
 
@@ -52,34 +74,44 @@ export default function Contact(){
                 </div>
                 </AnimationOnScroll>
 
-                <AnimationOnScroll animateIn="animate__fadeInRightBig">
+                <AnimationOnScroll initiallyVisible={true} animateIn="animate__fadeInRightBig">
 
                 <div className="contact_form">
-                    <form>
+
+                    {
+                        formstatus ?
+                        
+                        <h2>Form Already Submitted</h2>
+
+                        :
+                        <form ref={form} onSubmit={sendEmail}>
                         <div>
                             <h2>Contact Me</h2>
                         </div>
 
                         <div>
                             {/* <label>Name</label> */}
-                            <input type="text" placeholder="Full Name"></input>
+                            <input type="text" name="user_name" placeholder="Full Name"></input>
                         </div>
 
                         <div>
                             {/* <label>Email</label> */}
-                            <input type="mail" placeholder="Email"></input>
+                            <input type="mail" name="user_email" placeholder="Email"></input>
                         </div>
 
                         <div>
                             {/* <label>Message</label> */}
-                            <textarea type="text" placeholder="Message"></textarea>
+                            <textarea type="text" name="message" placeholder="Message"></textarea>
                         </div>
 
                         <div>
-                            <input type="submit" value="Submit"></input>
+                            <input type="submit" value="Send"></input>
                         </div>
 
                     </form>
+                    }
+
+                    
                 </div>
                 </AnimationOnScroll>
 
