@@ -123,9 +123,34 @@ z-index: 3;
 }
 .card{
   width: 40rem;
+  gap:2rem 0;
+  grid-template-columns:auto 0;
+}
+.card div:nth-child(2){
+  grid-row: 3/4;
+
+}
+.card div:nth-child(3){
+  grid-row: 2/3;
 }
 .card_img{
-  width: 15rem;
+  width: 16rem;
+  margin:1rem auto;
 }
 
+.card h3{
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 1.8rem;
+}
+.card span{
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  background:yellow;
+}
+.card p{
+  text-align: center;
+
+}
 }

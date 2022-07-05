@@ -12,13 +12,6 @@ export default function Project(){
         details: 'A website build for Football Academy located in Virar.'
     },
     {
-        name: 'jobportal-zeta.vercel.app',
-        img:'/icons/rb_logo.png',
-        language: 'Next Js , React Js , MongoDB',
-        deployed: 'Vercel',
-        details: 'A website build for College Project.'
-    },
-    {
         name: 'makecareer.vercel.app',
         img:'/favicon.ico',
         language: 'Next Js , React Js , MongoDB',
@@ -32,7 +25,13 @@ export default function Project(){
         deployed: 'Vercel',
         details: 'Demo projects for api learning'
     },
-    
+    {
+        name: 'jobportal-zeta.vercel.app',
+        img:'/icons/rb_logo.png',
+        language: 'Next Js , React Js , MongoDB',
+        deployed: 'Vercel',
+        details: 'A website build for College Project.'
+    },
 ]
 
     return(
@@ -73,17 +72,17 @@ export default function Project(){
                                         <div>
                                             <h3>Languages Used - </h3>
                                             <span>
-                                                {curElm.language}
+                                                <p>{curElm.language}</p>
                                             </span>
 
                                             <h3>Deployed On - </h3>
                                             <span>
-                                                {curElm.deployed}
+                                                <p>{curElm.deployed}</p>
                                             </span>
 
                                             <h3>Project Details - </h3>
                                             <span>
-                                                {curElm.details}
+                                                <p>{curElm.details}</p>
                                             </span>
                                         </div>
 
