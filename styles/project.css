@@ -1,5 +1,5 @@
 .project_container{
-    padding: 15rem;
+    padding: 15rem 0;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -18,7 +18,7 @@ z-index: 3;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   /* Below is not needed */
-  font-size: 20rem;
+  font-size: 15rem;
   font-family: arial;
   text-align: center;
   font-weight: bold;
@@ -29,6 +29,8 @@ z-index: 3;
 }
 
 .project_card_container{
+  padding: 0 15%;
+
   z-index: 5;
   position: relative;
     display: flex;
@@ -116,8 +118,14 @@ z-index: 3;
   padding: 20rem 2rem;
   width: 100%;
 }
+.project_card_container{
+  padding: 0;
+}
 .card{
   width: 40rem;
+}
+.card_img{
+  width: 15rem;
 }
 
 }

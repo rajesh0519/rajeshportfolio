@@ -26,19 +26,13 @@ export default function Project(){
         details: 'A free Resume Builder website, its easy to use and totally free , no gimmick.'
     },
     {
-        name: 'jobportal-zeta.vercel.app',
-        img:'/icons/rb_logo.png',
-        language: 'Next Js , React Js , MongoDB',
-        deployed: 'Vercel',
-        details: 'A website build for College Project.'
-    },
-    {
-        name: 'makecareer.vercel.app',
+        name: '4wzuz.csb.app/  ',
         img:'/favicon.ico',
-        language: 'Next Js , React Js , MongoDB',
+        language: 'React Js',
         deployed: 'Vercel',
-        details: 'A free Resume Builder website, its easy to use and totally free , no gimmick.'
-    }
+        details: 'Demo projects for api learning'
+    },
+    
 ]
 
     return(
