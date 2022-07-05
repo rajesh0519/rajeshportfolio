@@ -26,7 +26,7 @@ export default function HomePage(){
                     </div>
 
                 <div className="main_img">
-                    <img src="favicon.ico"></img>
+                    <img src="profile.jpg"></img>
                 </div>
 
             </div>

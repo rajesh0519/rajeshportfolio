@@ -65,7 +65,7 @@ export default function Project(){
                         projects.map((curElm,index )=> {
                             return(
                                 <SwiperSlide key={index}>
-                <ScrollAnimation initiallyVisible={true} animateIn="animate__jello">
+                <ScrollAnimation initiallyVisible={true} animateOnce={true} animateIn="animate__jello">
 
                                     <div className="card" >
                                         <div className="card_img">

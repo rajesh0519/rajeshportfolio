@@ -11,12 +11,6 @@ z-index: 3;
 
 .project_header{
   width: 100%;
-  /* height: 70rem; */
-  /* position: absolute; */
-  /* top:50%; */
-  /* left:0; */
-  /* transform: translateY(-50%) ; */
-  /* background:blue; */
   margin:auto;
 }
 .project_header h1{
@@ -116,7 +110,7 @@ z-index: 3;
 @media screen and (max-width: 768px){
 
 .project_header h1{
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .project_container{
   padding: 15rem 2rem;
